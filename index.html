@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Textos que se mechem</title>
+</head>
+<body>
+    <div>
+        <row>
+            <p id="TextoMecheAntes"></p>
+            <p id="LetraMaiusculaVermelha"></p>
+            <p id="TextoMecheDepois"></p>
+        </row>
+            <textarea id="AreaTexto" cols="50" rows="5">Digite o texto que você quer deixar em loop aqui!</textarea>
+            <row>
+                <label>Quantos milisegundos você quer entre cada letra? :</label>
+                <input type="number" id="TempoEntreLetras" min="0" max="30">
+            </row>
+        <button type="button" onclick="BotarParaMecher()" id="BotaoMecher">Vamos botar o texto pra mecher!!</button>
+        <button type="button" onClick="history.go(0)">Tentar outro texto?</button>
+    </div>
+</body>
+</html>
